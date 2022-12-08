@@ -152,4 +152,50 @@ function copyToClipboard(text: string) {
 .copyright {
   color: #888;
 }
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 32px;
+    word-break: break-all;
+  }
+
+  .listWrapper {
+    .card {
+      flex: 0 0 50%;
+
+      &:hover {
+        transform: scale(100%, 100%);
+
+        .cardImg {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 32px;
+    word-break: break-all;
+  }
+
+  .listWrapper {
+    .card {
+      flex: 0 0 100%;
+
+      &:hover {
+        transform: scale(100%, 100%);
+
+        .cardImg {
+          box-shadow: none;
+        }
+      }
+
+      .infoWrapper {
+        text-align: center;
+      }
+    }
+  }
+}
 </style>
