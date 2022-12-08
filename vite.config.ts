@@ -3,6 +3,6 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/google-sheet-db/",
+  base: "/google-sheet-db/dist/",
   plugins: [vue()]
 })
